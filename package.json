@@ -1,0 +1,30 @@
+{
+  "name": "pi-skills",
+  "version": "1.0.0",
+  "description": "Reusable Oh My Pi skills, extension commands, and theme source files",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "omp-plugin",
+    "skill",
+    "extension",
+    "theme"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@oh-my-pi/pi-coding-agent": "^16.1.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^5.9.3"
+  },
+  "omp": {
+    "extensions": [
+      "./extensions/code-simplifier.ts",
+      "./extensions/nu-user-bash.ts"
+    ]
+  }
+}
